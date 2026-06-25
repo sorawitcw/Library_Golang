@@ -3,14 +3,14 @@ package entity
 import "time"
 
 type Book struct {
-    Id          string
-    Title       string
-    Author      string
-    ISBN        string
-    TotalCopies int
-    Available   int    // จำนวนที่ยืมได้ตอนนี้
-    CreatedAt   time.Time
-    UpdatedAt   time.Time
+    Id          string    `json:"id"`
+    Title       string    `json:"title"`
+    Author      string    `json:"author"`
+    ISBN        string    `json:"isbn"`
+    TotalCopies int       `json:"total_copies"`
+    Available   int       `json:"available"`
+    CreatedAt   time.Time `json:"created_at"`
+    UpdatedAt   time.Time `json:"updated_at"`
 }
 
 type BookResponse struct {
